@@ -86,7 +86,7 @@ $c=$_COOKIE['timeleft'];
             {
               if(isset($_POST["btnSubmit"]))
               {
-               $typepass=strtolower(mysqli_real_escape_string($con,$_POST["txtAnswer"]));
+               $typepass=strtoupper(mysqli_real_escape_string($con,$_POST["txtAnswer"]));
                         if($typepass == $pass)
                         {
                           session_start();
